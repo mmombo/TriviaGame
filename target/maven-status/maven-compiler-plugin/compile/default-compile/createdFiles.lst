@@ -1,4 +1,5 @@
 Trivia\Questions.class
 Trivia\Trivia.class
-Trivia\Interface.class
+Trivia\MainInterface.class
+Trivia\GameInterface.class
 Trivia\Question.class
