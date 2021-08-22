@@ -10,7 +10,7 @@ public class MainInterface {
     public static void main(String[] args) {
 
 
-        Trivia trivia = new Trivia();
+        TriviaSource trivia = new TriviaSource();
         Questions questionsObject = new Questions();
 
         System.out.println("\n\nWelcome to Matt's Trivia Game!");

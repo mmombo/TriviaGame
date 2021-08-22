@@ -16,7 +16,7 @@ public class GameInterface {
 
 
     public void playGame(List<Question> triviaQuestions) {
-        List<String> answers = null;
+        List<String> answers;
         String correctAnswer;
         int correctIndex = -1;
         int score = 0;
