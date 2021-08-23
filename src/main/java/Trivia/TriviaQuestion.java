@@ -10,11 +10,9 @@ public class TriviaQuestion {
         this.question = question;
         this.answer = answer;
 
-    };
+    }
     public TriviaQuestion (){
-
-
-    };
+    }
 
 
     public String getQuestion() {

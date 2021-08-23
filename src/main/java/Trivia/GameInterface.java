@@ -15,7 +15,7 @@ public class GameInterface {
     public void playGame(List<APIQuestion> triviaQuestions) {
         List<String> answers;
         String correctAnswer;
-        int correctIndex = -1;
+        int correctIndex;
         int score = 0;
 
         for (int i = 0; i < triviaQuestions.size(); i++) {

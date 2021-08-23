@@ -1,7 +1,6 @@
 package Trivia;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -9,7 +8,7 @@ import java.util.List;
 
 public class PostgresSQLJDBC {
 
-    public PostgresSQLJDBC(){};
+    public PostgresSQLJDBC(){}
 
     public List<TriviaQuestion> getTrivia()  {
 

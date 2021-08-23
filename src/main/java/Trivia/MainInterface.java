@@ -1,6 +1,5 @@
 package Trivia;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -27,8 +26,8 @@ public class MainInterface {
 
         if (input == 1) {
             PostgresSQLJDBC db = new PostgresSQLJDBC();
-            List<TriviaQuestion> triviaquestions = db.getTrivia();
-            gameinterface.playGameDB(triviaquestions);
+            List<TriviaQuestion> triviaQuestions = db.getTrivia();
+            gameinterface.playGameDB(triviaQuestions);
 
         }
         else {
