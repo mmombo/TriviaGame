@@ -1,5 +1,7 @@
-Trivia\Questions.class
 Trivia\MainInterface.class
 Trivia\GameInterface.class
+Trivia\PostgresSQLJDBC.class
 Trivia\TriviaSource.class
-Trivia\Question.class
+Trivia\APIQuestion.class
+Trivia\APIQuestions.class
+Trivia\TriviaQuestion.class
