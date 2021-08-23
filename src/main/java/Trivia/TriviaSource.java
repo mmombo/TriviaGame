@@ -14,7 +14,10 @@ public class TriviaSource {
 
     public TriviaSource (){}
 
-    public Questions getTrivia(String category){
+    public APIQuestions getTrivia(String category){
+
+
+
 
 
 
@@ -48,7 +51,7 @@ public class TriviaSource {
 
         Gson gson = new Gson();
 
-        return gson.fromJson(response.getBody(),Questions.class);
+        return gson.fromJson(response.getBody(),APIQuestions.class);
 
     }
 

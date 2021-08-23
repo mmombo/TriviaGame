@@ -2,10 +2,7 @@ package Trivia;
 
 import org.unbescape.html.HtmlEscape;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class GameInterface {
 
@@ -15,7 +12,7 @@ public class GameInterface {
 
 
 
-    public void playGame(List<Question> triviaQuestions) {
+    public void playGame(List<APIQuestion> triviaQuestions) {
         List<String> answers;
         String correctAnswer;
         int correctIndex = -1;
@@ -73,6 +70,31 @@ public class GameInterface {
         }
         Collections.shuffle(shuffled);
         return shuffled;
+
+    }
+
+    public void playGameDB (List<TriviaQuestion> questionsList){
+
+        int score = 0;
+
+        for (int i=0; i < questionsList.size();i++){
+
+            System.out.println("\nQuestion: " + questionsList.get(i).getQuestion());
+
+            Scanner scanner = new Scanner(System.in);
+            String input = scanner.nextLine();
+
+            if (input.equalsIgnoreCase(questionsList.get(i).getAnswer())){
+                System.out.println("Correct!");
+                score++;
+            } else {
+                 System.out.println("Incorrect, Correct Answer was: " + questionsList.get(i).getAnswer());
+            }
+
+        }
+
+        System.out.println("Your score was: " + score + "/10");
+
 
     }
 
